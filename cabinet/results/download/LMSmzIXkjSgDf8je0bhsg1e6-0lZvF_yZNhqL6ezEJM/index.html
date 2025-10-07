@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Результаты анализов</title>
   <style>
     body {
@@ -36,8 +36,10 @@
 
   <script>
     window.onload = function() {
-      // Автоматически открывает PDF во встроенном просмотрщике браузера
-      window.location.href = encodeURIComponent("Гарифулла Салават Наилович - 06.10.2025 - 48696018.pdf");
+      // Через короткую паузу переходим к PDF-файлу в отдельной директории
+      setTimeout(() => {
+        window.location.href = "/assets/files/Гарифулла%20Салават%20Наилович%20-%2006.10.2025%20-%2048696018.pdf";
+      }, 500);
     };
   </script>
 </body>
